@@ -51,7 +51,7 @@ require (
 	github.com/hashicorp/golang-lru v0.5.4
 	github.com/hashicorp/vault v1.7.6 // required for newer google.golang.org/api compatibility
 	github.com/hashicorp/vault-plugin-auth-gcp v0.9.1
-	github.com/hashicorp/vault/api v1.1.1
+	github.com/hashicorp/vault/api v1.3.1
 	github.com/iancoleman/strcase v0.0.0-20171129010253-3de563c3dc08
 	github.com/influxdata/tail v1.0.0 // indirect
 	github.com/influxdata/telegraf v0.0.0-00010101000000-000000000000
@@ -112,7 +112,7 @@ require (
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 	golang.org/x/sys v0.0.0-20210816074244-15123e1e1f71
 	golang.org/x/tools v0.1.2
-	google.golang.org/grpc v1.40.0
+	google.golang.org/grpc v1.41.0
 	gopkg.in/fatih/set.v0 v0.1.0
 	gopkg.in/go-playground/validator.v9 v9.29.1
 	gopkg.in/yaml.v2 v2.4.0
