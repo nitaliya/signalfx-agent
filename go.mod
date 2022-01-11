@@ -47,7 +47,7 @@ require (
 	github.com/google/cadvisor v0.26.1
 	github.com/gorilla/mux v1.8.0
 	github.com/guregu/null v4.0.0+incompatible // indirect
-	github.com/hashicorp/consul/api v1.8.1
+	github.com/hashicorp/consul/api v1.12.0
 	github.com/hashicorp/golang-lru v0.5.4
 	github.com/hashicorp/vault v1.7.6 // required for newer google.golang.org/api compatibility
 	github.com/hashicorp/vault-plugin-auth-gcp v0.9.1
