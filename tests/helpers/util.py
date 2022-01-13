@@ -449,11 +449,12 @@ def run_simple_sanic_app(app):
     loop = asyncio.new_event_loop()
 
     async def start_server():
-        server = app.create_server(sock=app_sock, access_log=False, return_asyncio_server=True)
-        loop.create_task(server)
+        server = await app.create_server(sock=app_sock, access_log=False, return_asyncio_server=True)
+        await server.startup()
+        await server.serve_forever()
 
-    loop.create_task(start_server())
     threading.Thread(target=loop.run_forever, daemon=True).start()
+    loop.call_soon_threadsafe(asyncio.create_task, start_server())
 
     try:
         yield f"http://127.0.0.1:{port}"
