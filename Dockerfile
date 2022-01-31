@@ -1,5 +1,5 @@
-ARG GO_VERSION=1.14.2
-ARG PIP_VERSION=21.0.1
+ARG GO_VERSION=1.17.6
+ARG PIP_VERSION=21.3.1
 
 ###### Agent Build Image ########
 FROM ubuntu:18.04 as agent-builder
